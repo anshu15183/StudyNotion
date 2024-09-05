@@ -88,6 +88,7 @@ exports.createCourse = async (req, res) => {
 //getAllCourses handler function
 exports.getALlCourses = async (req, res) => {
 	try {
+		//***********************************TODO::::::Change the below statement incrementally */
 		const allCourses = await Course.find({});
 		//return response
 		return res.status(200).json({
